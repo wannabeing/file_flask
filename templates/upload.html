@@ -7,7 +7,7 @@
 
   <body>
     <center><h1>Upload Page</h1></center>
-    <center><a href="/">홈페이지</a><br><center>
+    <center><a href="{{url_for('files.main_page')}}">홈페이지</a><br></center>
     <hr width="100%" color="black"/>
     <center><h3>Upload File!</h3></center>
     <hr width="100%" color="black"/>
@@ -16,10 +16,12 @@
         style="margin-left: auto; margin-right: auto; display: block;")/>
 
     <br><br><center>
-    <form action = "http://localhost:5000/uploadcheck" method = "POST"
+    <form action = "{{ url_for('files.upload_file') }}" method = "POST"
          enctype = "multipart/form-data">
     <input type = "file" name = "file" />
     <input type = "submit"/>
     </form></center>
   </body>
 </html>
+
+<!-- http://localhost:5000/uploadcheck -->

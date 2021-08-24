@@ -13,16 +13,16 @@
     <form>
     <img src="{{ url_for('static',filename='images/file.png') }}", width="50"
         style="margin-left: auto; margin-right: auto; display: block;")/>
-    <a href="./upload">파일 업로드</a><br><br><br>
+    <a href="{{url_for('files.upload_page')}}">파일 업로드</a><br><br><br>
 
     <img src="{{ url_for('static',filename='images/down.png') }}", width="50"
         style="margin-left: auto; margin-right: auto; display: block;")/>
-    <a href="./download">파일 다운로드</a><br><br><br>
+    <a href="{{url_for('files.down_page')}}">파일 다운로드</a><br><br><br>
 
 
     <img src="{{ url_for('static',filename='images/list.png') }}", width="50"
         style="margin-left: auto; margin-right: auto; display: block;")/>
-    <a href="./list">파일 목록</a><br><br><br>
+    <a href="{{url_for('files.list_page')}}">파일 목록</a><br><br><br>
     </form>
     </center>
   </body>

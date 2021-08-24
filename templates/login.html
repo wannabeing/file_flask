@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+  <head>
+		<title>Login Service</title>
+  </head>
+  <body><center><div>
+  	<h1>Login Page</h1>
+  	<hr width="100%" color="black"/>
+  	<center>
+  		<img src="{{ url_for('static',filename='images/naver.png')}}"/>
+  		<h3>Please LOGIN !</h3>
+  	</center>
+  	<hr width="100%" color="black"/>
+  	<a href="{{url_for('files.main_page')}}">홈페이지</a>
+	</div></center>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
